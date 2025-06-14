@@ -5,53 +5,97 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Natesworks</title>
 <style>
-body {
+* 
+{
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body 
+{
   height: 100vh;
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
   background-color: #0e0e0e;
   color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
-.container {
+
+.container 
+{
   text-align: center;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
 }
-h1 {
+
+h1 
+{
   font-size: 3em;
   margin-bottom: 0.2em;
+  color: #ffffff;
 }
-h2 {
-  font-weight: normal;
+
+h2 
+{
+  font-weight: 300;
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
+  color: #bbbbbb;
 }
-a {
-  color: #61dafb;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-a:hover {
-  text-decoration: underline;
-}
-.links {
+
+.links 
+{
   display: flex;
   flex-direction: column;
-  gap: 0.6em;
+  gap: 0.75em;
+}
+
+a 
+{
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+a:hover 
+{
+  background-color: #1f1f1f;
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn 
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>Natesworks</h1>
-  <h2>C++ developer</h2>
+  <h2>C++ Developer</h2>
   <div class="links">
     <a href="https://brawlmods.natesworks.com">Brawlmods</a>
     <a href="https://t.me/nbsoffline">NBS Offline</a>
     <a href="https://github.com/natesworks/redrive">ReDrive</a>
     <a href="mailto:contact@natesworks.com">Contact</a>
-    <a href="https://github.com/natesworks">More [GitHub]</a>
+    <a href="https://github.com/natesworks">More on GitHub</a>
   </div>
 </div>
 </body>
